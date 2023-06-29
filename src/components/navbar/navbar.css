@@ -1,0 +1,18 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  background: var(--color-bg);
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar a:hover {
+  color: gold;
+}

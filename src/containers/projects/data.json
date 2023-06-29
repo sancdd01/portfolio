@@ -1,0 +1,23 @@
+[
+  {
+    "video": "https://youtu.be/nTMscjT8wXE",
+    "title": "Pawnee City Website",
+    "blurb": "I created a fantastic site featuring the city from Parks & Recreation",
+    "url": "https//goingplaces.com",
+    "source_code": "https://github.com/sancdd01/Pawnee_Website"
+  },
+  {
+    "video": "https://youtu.be/S5yAbGuPDDc",
+    "title": "PokeDex App",
+    "blurb": "Using test driven development this app was created to pull data from the pokemon API and allows a user to create their own team.",
+    "url": "https://sancdd01.github.io/",
+    "source_code": "https://github.com/sancdd01/PokeDex"
+  },
+  {
+    "video": "",
+    "title": "Marlons Auto Shop",
+    "blurb": "This site is currently in work!",
+    "url": "https//goingplaces.com",
+    "source_code": "githublink"
+  }
+]

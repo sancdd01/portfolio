@@ -1,0 +1,17 @@
+.projects__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  transition: all 0.5s ease;
+}
+
+.proj__feature {
+  flex-grow: 1;
+  min-width: 100px; /* This should be set to a value that works for your layout */
+  max-width: 450px;
+  transition: all 0.5s ease;
+}
+
+.proj__feature:hover {
+  flex-grow: 3;
+}

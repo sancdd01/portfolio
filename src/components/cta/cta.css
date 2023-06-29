@@ -1,0 +1,23 @@
+.cta-container {
+  display: flex;
+  justify-content: center;
+  margin: 6rem;
+}
+
+.cta-container a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+button {
+  width: 50%;
+  font-size: larger;
+  padding: 2rem 1rem;
+  border-radius: 40px;
+  border-color: white;
+  background: var(--gradient-bar);
+  color: white;
+  outline-color: white;
+  outline-width: 2px;
+}
