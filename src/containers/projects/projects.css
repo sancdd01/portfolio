@@ -2,14 +2,20 @@
   display: flex;
   width: 100%;
   justify-content: space-around;
+  align-items: center;
   transition: all 0.5s ease;
+ 
 }
 
 .proj__feature {
   flex-grow: 1;
   min-width: 100px; /* This should be set to a value that works for your layout */
   max-width: 450px;
+  height: 100%;
   transition: all 0.5s ease;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+ 
 }
 
 .proj__feature:hover {

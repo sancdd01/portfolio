@@ -40,10 +40,11 @@
 }
 
 .header-skills {
-  display: flex;
-  flex-direction: row;
+  display: grid;
   justify-content: center;
   align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
 }
 
 .header-skills-container {
@@ -57,4 +58,27 @@
 .header-skills-icon img {
   width: 50px;
   height: 50px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-overview {
+    padding: 1rem;
+  }
+  .header-img img {
+    width: 80%
+  }
+  .header-skills {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-skills {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
 }

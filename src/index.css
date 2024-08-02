@@ -12,3 +12,22 @@
   --color-text: #81afdd;
   --color-subtext: #ff8a71;
 }
+
+@media only screen and (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-overview {
+    padding: 1rem
+  }
+  .header-img img {
+    width: 80%;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar a {
+    margin: 0.5rem 0;
+  }
+}

@@ -2,3 +2,57 @@
   display: flex;
   flex-direction: row;
 }
+
+.about__features {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature { 
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.feature-bar {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #ccc;
+}
+
+.feature-text {
+  margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .about__container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 566px) {
+  .feature {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .feature-title {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-bar {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-text {
+    margin-top: 0;
+  }
+}

@@ -1,18 +1,67 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
   padding: 1rem 5rem;
   background: var(--color-bg);
   position: relative;
   z-index: 1000;
 }
 
-.navbar a {
-  color: white;
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.navbar a:hover {
-  color: gold;
+.navbar-links p {
+  margin: 0 1rem;
+}
+
+.navbar-links p a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.navbar-links p a:hover {
+  color: gold !important;
+}
+
+.navbar-links p a:visited {
+  color: white !important;
+}
+
+.navbar-hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar-hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--color-bg);
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-links.open {
+    display: flex;
+  }
+  .navbar-hamburger {
+    display: flex;
+  }
 }

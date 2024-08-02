@@ -1,6 +1,3 @@
-/* * {
-  color: white;
-} */
 
 .contact-color {
   border-color: white;
@@ -8,4 +5,12 @@
 
 div {
   border-color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
 }
