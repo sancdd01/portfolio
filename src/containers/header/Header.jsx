@@ -53,62 +53,6 @@ const Header = () => {
           </p>
         </div>
       </div>
-      <div className="header-skills">
-        <div className="header-skills-container">
-          <div className="header-skills-icon">
-            <img src={java} alt="" />
-          </div>
-          <div className="header-skills-text">Java</div>
-        </div>
-        <div className="header-skills-container">
-          <div className="header-skills-icon">
-            <img src={css} alt="" />
-          </div>
-          <div className="header-skills-text">CSS</div>
-        </div>
-        <div className="header-skills-container">
-          <div className="header-skills-icon">
-            <img src={html} alt="" />
-          </div>
-          <div className="header-skills-text">HTML</div>
-        </div>
-        <div className="header-skills-container">
-          <div className="header-skills-icon">
-            <img src={django} alt="" />
-          </div>
-          <div className="header-skills-text">Django</div>
-        </div>
-        <div className="header-skills-container">
-          <div className="header-skills-icon">
-            <img src={js} alt="" />
-          </div>
-          <div className="header-skills-text">Javascript</div>
-        </div>
-        <div className="header-skills-container">
-          <div className="header-skills-icon">
-            <img src={ts} alt="" />
-          </div>
-          <div className="header-skills-text">TypeScript</div>
-        </div>
-        <div className="header-skills-container">
-          <div className="header-skills-icon">
-            <img src={python} alt="" />
-          </div>
-          <div className="header-skills-text">Python</div>
-        </div>
-        <div className="header-skills-container">
-          <div className="header-skills-icon">
-            <img src={react1} alt="" />
-          </div>
-          <div className="header-skills-text">React</div>
-        </div>
-        <div className="header-skills-container">
-          <div className="header-skills-icon">
-            <img src={postgresql} alt="" />
-          </div>
-          <div className="header-skills-text">PostgreSQL</div>
-        </div>
-      </div>
     </div>
   );
 };

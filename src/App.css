@@ -3,6 +3,8 @@ body {
   color: white;
 }
 
+
+
 .gradient__bg {
   /* ff 3.6+ */
   background: -moz-linear-gradient(
@@ -85,3 +87,33 @@ body {
       0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
   }
 }
+
+/* scroll snapping container */
+.scroll-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  padding-top: 60px;
+}
+
+.scroll-section {
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.skills {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin-top: 30px;
+  gap: 20px;
+}
+
