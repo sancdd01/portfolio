@@ -35,7 +35,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar />  
       <div className="scroll-container">
         <div className="scroll-section" ref={(el) => (sectionsRef.current[0] = el)}>
         <Header />
