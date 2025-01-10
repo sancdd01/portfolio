@@ -12,8 +12,9 @@ const Projects = () => {
             video={project.video}
             title={project.title}
             blurb={project.blurb}
+            source={project.source_code}
             url={project.url}
-            source_code={project.source_code}
+            reverse={index % 2 === 1}
           />
         </div>
       ))}
@@ -22,3 +23,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
