@@ -1,30 +1,26 @@
 import React from "react";
+import AnimatedBackground from "../../components/AnimatedBackground";
+
 import "./header.css";
-import freq from "../../assets/freq.jpg";
 import pic from "../../assets/pic.png";
-import {
-  css,
-  django,
-  html,
-  java,
-  js,
-  postgresql,
-  python,
-  react1,
-  ts,
-} from "./imports";
+
 
 const Header = () => {
   return (
-    <div className="header gradient__bg">
-      <div className="header-name" style={{ backgroundImage: `url(${freq})` }}>
+    <>
+      {/* Hero Section */}
+      <section className="hero-section">
+        <AnimatedBackground />
         <h1 className="text-pop-up-top ">DERRICK</h1>
-      </div>
-      <div className="header-content">
-        <div className="header-img">
-          <img src={pic} alt="" />
-        </div>
-        <div className="header-overiew" id="home">
+      </section>
+
+      {/* Intro Section */}
+      <section className="intro-section">
+        <div className="header-content">
+          <div className="header-img">
+            <img src={pic} alt="portrait of Derrick" />
+          </div>
+          <div className="header-overiew" id="home">
           <p>
             Welcome to my portfolio website! I'm Derrick, a dedicated software
             developer with a background in aircraft mechanics and instruction in
@@ -52,8 +48,9 @@ const Header = () => {
             amazing together!
           </p>
         </div>
-      </div>
-    </div>
+        </div>
+      </section>
+    </>
   );
 };
 

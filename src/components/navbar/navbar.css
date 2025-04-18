@@ -5,8 +5,11 @@
   align-items: flex-end;
   padding: 1rem 5rem;
   background: var(--color-bg);
-  position: relative;
-  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1001;
   height:50px;
 }
 
