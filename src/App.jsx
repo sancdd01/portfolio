@@ -1,10 +1,10 @@
 import PortfolioCurrent from "./pages/PortfolioCurrent";
-import PortfolioV2 from "./pages/PortfolioV2";
+import PortfolioExperience from "./pages/PortfolioExperience";
 
 function App() {
   const route = window.location.hash;
 
-  return route === "#/v2" ? <PortfolioV2 /> : <PortfolioCurrent />;
+  return route === "#/v2" ? <PortfolioExperience   /> : <PortfolioCurrent />;
 }
 
 export default App;

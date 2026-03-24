@@ -1,0 +1,136 @@
+.portfolio-experience {
+  min-height: 100vh;
+  background: #0a0a0f;
+  color: #f5f7fa;
+}
+
+.hero-experience {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.hero-experience__background {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(87, 108, 188, 0.28), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(86, 208, 255, 0.18), transparent 30%),
+    linear-gradient(180deg, #0a0a0f 0%, #11131a 100%);
+  transform: scale(1.05);
+  will-change: transform;
+}
+
+.hero-experience__content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  text-align: center;
+}
+
+.hero-experience__eyebrow {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1.25rem;
+  opacity: 0.8;
+}
+
+.hero-experience__title {
+  margin: 0;
+  font-size: clamp(3rem, 8vw, 7rem);
+  line-height: 0.95;
+  letter-spacing: 0.08rem;
+}
+
+.hero-experience__subtitle {
+  max-width: 700px;
+  margin: 1.5rem auto 0;
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  line-height: 1.6;
+  color: rgba(245, 247, 250, 0.82);
+}
+
+.hero-experience__scroll {
+  margin-top: 3rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.hero-experience__scroll-line {
+  display: inline-block;
+  width: 42px;
+  height: 1px;
+  background: rgba(245, 247, 250, 0.65);
+}
+
+.hero-experience__content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  text-align: center;
+  will-change: transform, opacity;
+}
+
+.intro-panel {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background:
+    linear-gradient(180deg, #11131a 0%, #0f1722 55%, #0a0a0f 100%);
+}
+
+.intro-panel__inner {
+  width: 100%;
+  max-width: 900px;
+}
+
+.intro-panel__label {
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.28rem;
+  opacity: 0.75;
+}
+
+.intro-panel__title {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.1;
+  max-width: 850px;
+}
+
+.intro-panel__text {
+  margin-top: 1.5rem;
+  max-width: 700px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(245, 247, 250, 0.8);
+}
+
+.intro-panel__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+
+.intro-panel__tags span {
+  padding: 0.8rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 0.9rem;
+  letter-spacing: 0.03rem;
+}
