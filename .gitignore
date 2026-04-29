@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Local specs / design docs
+.kiro-specs/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

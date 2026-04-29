@@ -1,20 +1,16 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import GlobeScene from "./GlobeScene";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function HeroExperience() {
   const sectionRef = useRef(null);
   const contentRef = useRef(null);
-  const bgRef = useRef(null);
+  const scrollProgress = useRef(0);
 
   useEffect(() => {
-    console.log("HeroExperience mounted");
-    console.log("sectionRef:", sectionRef.current);
-    console.log("contentRef:", contentRef.current);
-    console.log("bgRef:", bgRef.current);
-
     const ctx = gsap.context(() => {
       gsap.to(contentRef.current, {
         y: -300,
@@ -25,20 +21,9 @@ function HeroExperience() {
           start: "top top",
           end: "bottom top",
           scrub: true,
-          markers: true,
-        },
-      });
-
-      gsap.to(bgRef.current, {
-        scale: 1.4,
-        y: 150,
-        ease: "none",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top top",
-          end: "bottom top",
-          scrub: true,
-          markers: true,
+          onUpdate: (self) => {
+            scrollProgress.current = self.getVelocity() * 0.001;
+          },
         },
       });
     }, sectionRef);
@@ -48,7 +33,9 @@ function HeroExperience() {
 
   return (
     <section className="hero-experience" ref={sectionRef}>
-      <div className="hero-experience__background" ref={bgRef}></div>
+      <div className="hero-experience__globe">
+        <GlobeScene scrollProgress={scrollProgress} />
+      </div>
 
       <div className="hero-experience__content" ref={contentRef}>
         <p className="hero-experience__eyebrow">Software Engineer</p>

@@ -14,15 +14,10 @@
   padding: 2rem;
 }
 
-.hero-experience__background {
+.hero-experience__globe {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(circle at top left, rgba(87, 108, 188, 0.28), transparent 35%),
-    radial-gradient(circle at bottom right, rgba(86, 208, 255, 0.18), transparent 30%),
-    linear-gradient(180deg, #0a0a0f 0%, #11131a 100%);
-  transform: scale(1.05);
-  will-change: transform;
+  z-index: 0;
 }
 
 .hero-experience__content {
